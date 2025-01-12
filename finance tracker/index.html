@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Finance Tracker</h1>
+  </header>
+  <main>
+    <section id="balance">
+      <h2>Total Expense: Rs<span id="total-balance">0.00</span></h2>
+    </section>
+    <section id="transactions">
+      <h3>Transaction History</h3>
+      <ul id="transaction-list"></ul>
+    </section>
+    <section id="add-transaction">
+      <h3>Add Transaction</h3>
+      <form id="transaction-form">
+          <input placeholder="description" type="text" id="description" required>
+          <input type="text" id="amount" placeholder="Amount" required>
+        <button type="submit">Add Transaction</button>
+        <button onclick="clr()" type="submit">Clear Transaction</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
